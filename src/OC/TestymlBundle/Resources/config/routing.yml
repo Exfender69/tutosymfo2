@@ -1,0 +1,3 @@
+oc_testyml_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: OCTestymlBundle:Default:index }
