@@ -2,13 +2,14 @@
 
 hello_the_world:
     path:     /hello-world
-    defaults: { _controller: PlatformBundle:Advert:index }
+    defaults: { _controller: OCPlatformBundle:Advert:index }
 
 # src/OC/PlatformBundle/Resources/config/routing.yml
 
-oc_platform_home:
-    path:      /platform
-    defaults:  { _controller: OC:PlatformBundle:Advert:index }
+oc_hello:
+    path:      /hello
+    defaults:  { _controller: OCPlatformBundle:Advert:hello }
+
 
 oc_platform_view:
     path:      /platform/advert/{id}

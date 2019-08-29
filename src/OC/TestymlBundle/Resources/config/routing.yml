@@ -1,3 +1,29 @@
-oc_testyml_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: OCTestymlBundle:Default:index }
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
+hello_the_world:
+    path:     /hello-world1
+    defaults: { _controller: OCTestymlBundle:Advert:index }
+
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
+
+
+oc_platform_view2:
+    path:      /advert/{id}
+    defaults:  { _controller: OCTestymlBundle:Advert:view }
+
+oc_platform_add2:
+    path:      /add
+    defaults:  { _controller: OCTestymlBundle:Advert:add }
+
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
+oc_platform_view_slug2:
+    path:      /{year}/{slug}.{format}
+    defaults:  { _controller: OCTestymlBundle:Advert:viewSlug }
+
+# app/config/routing.yml
+
+oc_platform2:
+    resource: "@OCTestymlBundle/Resources/config/routing.yml"
+    prefix:   /platform2
